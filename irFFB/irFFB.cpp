@@ -2170,9 +2170,9 @@ bool initVJD() {
     }
     else if (!DriverMatch(&verDll, &verDrv)) {
         text(L"vJoy driver version %04x != required version %04x!", verDrv, verDll);
-        return false;
+        //return false;
     }
-    else
+    //else
         text(L"vJoy driver version %04x init OK", verDrv);
 
     vjDev = 1;
